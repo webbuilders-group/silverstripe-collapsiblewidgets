@@ -1,0 +1,7 @@
+---
+Name: collapsiblewidgets
+After: 'cms/*', 'framework/*', 'widgets/*'
+---
+WidgetAreaEditor:
+    extensions:
+        - "CollapsibleWidgets"

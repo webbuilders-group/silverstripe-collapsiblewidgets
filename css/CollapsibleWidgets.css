@@ -1,0 +1,30 @@
+.usedWidgets .Widget .handle a.widget-collapse-toggle {
+    background: url(./../images/widget-collapse.png) no-repeat;
+    
+    float: right;
+    
+    display: block;
+    
+    width: 26px;
+    height: 26px;
+    
+    margin-top: 7px;
+    
+    cursor: pointer;
+}
+
+.usedWidgets .Widget .handle a.widget-collapse-toggle:hover, .usedWidgets .Widget .handle a.widget-collapse-toggle:active {
+    background-position: 0 -26px;
+}
+
+.usedWidgets .Widget .handle a.widget-collapse-toggle.expanded {
+    background-position: -26px 0;
+}
+
+.usedWidgets .Widget .handle a.widget-collapse-toggle.expanded:hover, .usedWidgets .Widget .handle a.widget-collapse-toggle.expanded:active {
+    background-position: -26px -26px;
+}
+
+.usedWidgets .Widget.collapsed .widgetFields {
+    display: none;
+}
