@@ -2,7 +2,7 @@
     $.entwine('cw', function($) {
         $('.usedWidgets .Widget').entwine({
             onmatch: function(e) {
-                if($(this).find('.handle .widget-collapse-toggle').length>0) {
+                if($(this).find('.handle .widget-collapse-toggle').length>0 || $(this).find('.widgetFields').length==0) {
                     return;
                 }
                 
