@@ -1,5 +1,12 @@
 # Change Log
 
+## [0.1.3](https://github.com/webbuilders-group/silverstripe-collapsiblewidgets/tree/0.1.3) (2017-03-09)
+[Full Changelog](https://github.com/webbuilders-group/silverstripe-collapsiblewidgets/compare/0.1.2...0.1.3)
+
+**Implemented enhancements:**
+
+- New widgets open by default [\#1](https://github.com/webbuilders-group/silverstripe-collapsiblewidgets/issues/1)
+
 ## [0.1.2](https://github.com/webbuilders-group/silverstripe-collapsiblewidgets/tree/0.1.2) (2017-03-08)
 [Full Changelog](https://github.com/webbuilders-group/silverstripe-collapsiblewidgets/compare/0.1.1...0.1.2)
 
