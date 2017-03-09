@@ -2,15 +2,17 @@
     $.entwine('cw', function($) {
         $('.usedWidgets .Widget').entwine({
             onmatch: function(e) {
-                if($(this).find('.handle .widget-collapse-toggle').length>0 || $(this).find('.widgetFields').length==0) {
+                var self=$(this);
+                
+                if(self.find('.handle .widget-collapse-toggle').length>0 || self.find('.widgetFields').length==0) {
                     return;
                 }
                 
                 var toggle=$('<a class="widget-collapse-toggle"><!-- --></a>');
-                $(this).find('.handle').append(toggle);
+                self.find('.handle').append(toggle);
                 
-                if($(this).hasClass('new-widget')==false && $(this).find('.validation, .error').length==0) {
-                    $(this).addClass('collapsed');
+                if(self.hasClass('new-widget')==false && self.find('.validation, .error').length==0) {
+                    self.addClass('collapsed');
                 }else {
                     toggle.addClass('expanded');
                 }
@@ -36,11 +38,25 @@
     });
     
     $.entwine('ss', function($) {
-        $('.WidgetAreaEditor.AdvancedWidgetAreaEditor').entwine({
-            insertWidgetEditor: function(response) {
-                this._super(response);
+        $('.WidgetAreaEditor .usedWidgets').entwine({
+            IsAdded: false,
+            
+            onadd: function(e) {
+                this._super(e);
                 
-                $(this).find('.Widget:last').addClass('new-widget');
+                this.setIsAdded(true);
+            }
+        });
+        
+
+        $('.WidgetAreaEditor .usedWidgets .Widget').entwine({
+            onadd: function(e) {
+                this._super(e);
+                
+                var self=$(this);
+                if(self.closest('.usedWidgets').getIsAdded()) {
+                    self.addClass('new-widget');
+                }
             }
         });
     });
