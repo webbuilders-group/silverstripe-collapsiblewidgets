@@ -1,7 +1,7 @@
 ---
 Name: collapsiblewidgets
-After: 'cms/*', 'framework/*', 'widgets/*'
+After: "silverstripe/widgets#*"
 ---
-WidgetAreaEditor:
+SilverStripe\Widgets\Forms\WidgetAreaEditor:
     extensions:
-        - "CollapsibleWidgets"
+        - 'WebbuildersGroup\CollapsibleWidgets\Extensions\CollapsibleWidgets'

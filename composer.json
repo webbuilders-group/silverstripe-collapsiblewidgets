@@ -19,10 +19,16 @@
     "support": {
         "issues": "https://github.com/webbuilders-group/silverstripe-collapsiblewidgets/issues"
     },
+    "autoload": {
+		"psr-4": {
+			"WebbuildersGroup\\CollapsibleWidgets\\": "src/"
+		}
+    },
     "extra": {
         "expose": [
-            "javascript",
-            "css"
+            "css",
+            "images",
+            "javascript"
         ],
         "branch-alias": {
             "dev-master": "2.0.x-dev"
