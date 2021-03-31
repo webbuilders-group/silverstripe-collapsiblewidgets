@@ -11,15 +11,21 @@
             "role": "Developer"
         }
     ],
-
     "require":
     {
-        "silverstripe/framework": "~3.1",
-        "silverstripe/widgets": "*",
-        "composer/installers": "*"
+        "silverstripe/recipe-core": "~4.6",
+        "silverstripe/widgets": "~2.0"
     },
-
     "support": {
         "issues": "https://github.com/webbuilders-group/silverstripe-collapsiblewidgets/issues"
+    },
+    "extra": {
+        "expose": [
+            "javascript",
+            "css"
+        ],
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
     }
 }
