@@ -13,8 +13,8 @@
     ],
     "require":
     {
-        "silverstripe/recipe-core": "~4.6",
-        "silverstripe/widgets": "~2.0"
+        "silverstripe/recipe-core": "~4.6|~5.0",
+        "silverstripe/widgets": "~2.0|~3.0"
     },
     "support": {
         "issues": "https://github.com/webbuilders-group/silverstripe-collapsiblewidgets/issues"
@@ -29,9 +29,6 @@
             "css",
             "images",
             "javascript"
-        ],
-        "branch-alias": {
-            "dev-master": "2.0.x-dev"
-        }
+        ]
     }
 }

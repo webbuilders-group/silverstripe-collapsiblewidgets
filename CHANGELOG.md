@@ -1,5 +1,8 @@
 # Change Log
 
+## [2.0.1](https://github.com/webbuilders-group/silverstripe-collapsiblewidgets/tree/2.0.1) (2023-07-28)
+[Full Changelog](https://github.com/webbuilders-group/silverstripe-collapsiblewidgets/compare/2.0.0...2.0.1)
+
 ## [2.0.0](https://github.com/webbuilders-group/silverstripe-collapsiblewidgets/tree/2.0.0) (2021-03-31)
 [Full Changelog](https://github.com/webbuilders-group/silverstripe-collapsiblewidgets/compare/1.0.0...2.0.0)
 

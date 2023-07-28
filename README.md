@@ -6,7 +6,7 @@ Extends the widget area editor and makes used widgets collapsible. Works well wi
 * Ed Chipman ([UndefinedOffset](https://github.com/UndefinedOffset))
 
 ## Requirements
-* SilverStripe CMS 4.6+
+* SilverStripe Framework 4.6+ | 5.0+
 * [SilverStripe Widgets](https://github.com/silverstripe/silverstripe-widgets/)
 
 
